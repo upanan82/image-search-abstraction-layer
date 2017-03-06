@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image Search Abstraction Layer</title>
+    </head>
+    <body>
+        <h2>Image Search Abstraction Layer</h2>
+        <b>User stories:</b><br>
+        1) I can get the image URLs, alt text and page urls for a set of images relating to a given search string.<br>
+        2) I can paginate through the responses by adding a ?offset=2 parameter to the URL.<br>
+        3) I can get a list of the most recently submitted search strings.<br><br>
+        <b>Example usage:</b><br>
+        https://image-search-upanan82.herokuapp.com/api/imgSearch/cat<br>
+        https://image-search-upanan82.herokuapp.com/api/imgSearch/cat?offset=1<br>
+        https://image-search-upanan82.herokuapp.com/api/latest/imgSearch<br><br>
+        <b>Example output:</b><br>
+        [{"url":"http://www.bing.com/cr?IG=D9F9BA8CBF9544529B8C2BD937BF8F68&CID=3E778F52614F6F970263856E60A86E5C&rd=1&h=ormFeaLi9JRt2NFMw5I_HmHTQ8IchTKt1P4vhD8SpfA&v=1&r=http%3a%2f%2f4.bp.blogspot.com%2f-ATHZWqtdwuA%2fTfyC5yGOW7I%2fAAAAAAAAFho%2fWrLXGJl5SQ4%2fs1600%2fcat_free_wallpapers.jpg&p=DevEx,5008.1","snippet":"Animal Free Wallpapers: Animal Cat Free Wallpapers","thumbnail":"https://tse4.mm.bing.net/th?id=OIP.xG9TJEkpjFWzczhK0G8ScgEsDh&pid=Api","context":"http://www.bing.com/cr?IG=D9F9BA8CBF9544529B8C2BD937BF8F68&CID=3E778F52614F6F970263856E60A86E5C&rd=1&h=Qlrn5T2xGho1dD1sMJfB3KZBYIppO5PL33uqZIkB34U&v=1&r=http%3a%2f%2fanimalfreewallpapers.blogspot.com%2f2011%2f06%2fanimal-cat-free-wallpapers.html&p=DevEx,5007.1"}]<br>
+        [{"term":"cat","when":"2017-03-05T23:37:22.420Z"},{"term":"beatu dog","when":"2017-03-05T23:10:30.974Z"},{"term":"beatu dog","when":"2017-03-05T23:10:21.151Z"},{"term":"beatu dog","when":"2017-03-05T23:04:36.449Z"},{"term":"beatu dog","when":"2017-03-05T23:02:10.264Z"},{"term":"cat","when":"2017-03-05T23:01:07.039Z"},{"term":"cat","when":"2017-03-05T22:59:53.557Z"},{"term":"cat","when":"2017-03-05T22:58:20.156Z"},{"term":"cat","when":"2017-03-05T22:22:46.066Z"},{"term":"cat","when":"2017-03-05T22:21:37.787Z"}]<br><br><br><br>
+        by <a target='_blank' href="https://github.com/upanan82">upanan82</a>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "Image Search Abstraction Layer",
+  "version": "0.2.5",
+  "description": "A sample Node.js app using Express 4",
+  "engines": {
+    "node": "5.9.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "4.13.3",
+    "mongodb": "^2.2.22",
+    "path": "^0.12.7",
+    "node-bing-api": "^3.2.1"
+  },
+  "author": "upanan82",
+  "license": "MIT"
+}
