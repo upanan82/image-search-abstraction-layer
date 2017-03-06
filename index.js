@@ -2,8 +2,8 @@ var express = require('express'),
     path = require('path'),
     app = express(),
     MongoClient = require('mongodb').MongoClient,
-    dbUrl = 'mongodb://admin:admin@ds113580.mlab.com:13580/freecodecamp_1',
-    Bing = require('node-bing-api')({ accKey: "e22b02439d8a4ab491fc769c3d520839" });
+    dbUrl = 'mongodb://<db_username>:<password>@ds113580.mlab.com:13580/freecodecamp_1',
+    Bing = require('node-bing-api')({ accKey: "<bingo-search-image-api-key>" });
 
 // Listen port
 app.set('port', (process.env.PORT || 5000));
