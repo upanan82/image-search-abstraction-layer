@@ -2,14 +2,8 @@ var express = require('express'),
     path = require('path'),
     app = express(),
     MongoClient = require('mongodb').MongoClient,
-    dbUrl = 'mongodb://<db_username>:<password>@ds113580.mlab.com:13580/freecodecamp_1',
-    Bing = require('node-bing-api')({ accKey: "<bingo-search-image-api-key>" });
-
-// Listen port
-app.set('port', (process.env.PORT || 5000));
-app.listen(app.get('port'), function() {
-    console.log('Node app is running on port', app.get('port'));
-});
+    dbUrl = 'mongodb://' + process.env.DB_LOGIN + ':' + process.env.DB_PASS + '@ds113580.mlab.com:13580/freecodecamp_1',
+    Bing = require('node-bing-api')({ accKey: process.env.BINGO });
 
 // Include home page
 app.get('/', function(req, res) {
@@ -60,4 +54,10 @@ app.get('/api/latest/imgSearch', function(req, res) {
             db.close();
         });
     });
+});
+
+// Listen port
+app.set('port', (process.env.PORT || 5000));
+app.listen(app.get('port'), function() {
+    console.log('Node app is running on port', app.get('port'));
 });
